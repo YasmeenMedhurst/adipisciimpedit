@@ -1,0 +1,42 @@
+{
+  "name": "adipisciimpedit",
+  "version": "1.0.0",
+  "description": "Hybrid (RSA+AES) encryption and decryption toolkit for JavaScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require babel-core/register -R spec",
+    "webpack": "browserify lib/webpack.js -o web/hybrid-crypto.js -t [ babelify --presets [ react-native ] ]",
+    "uglify": "uglifyjs web/hybrid-crypto.js -o web/hybrid-crypto.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YasmeenMedhurst/adipisciimpedit.git"
+  },
+  "keywords": [
+    "neque",
+    "earum",
+    "facere",
+    "saepe",
+    "react",
+    "native"
+  ],
+  "author": "ClementShanahan",
+  "license": "MIT",
+  "dependencies": {
+    "node-forge": "^0.7.1",
+    "react-native": "^0.48.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babelify": "^8.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "uglify-js": "^3.2.1"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ]
+  }
+}
